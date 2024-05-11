@@ -31,6 +31,6 @@ jobs:
       env:
         DOCKERHUB_USERNAME: ${{ secrets.USERNAME }}
       run: |
-          docker build -t $DOCKERHUB_USERNAME/danushka95/danu-repo/app:latest .
-          docker push $DOCKERHUB_USERNAME/danushka95/danu-repo/app:latest
+          docker build -t danushka95/danu-repo/app:latest .
+          docker push danushka95/danu-repo/app:latest
           
