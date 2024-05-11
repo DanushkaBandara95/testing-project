@@ -29,10 +29,7 @@ jobs:
 
     - name: Build and push
       env:
-        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
-        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
         DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USER_NAME }}
-        
       run: |
           docker build -t <DOCKERHUB_USERNAME>/my-app:latest .
           docker push <DOCKERHUB_USERNAME>/my-app:latest
